@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>hey></title>
+    <title>Skysports Enviroment Breakdown></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
 
     <div class="site-header">
       <div class="site-header__body">
-          <div class="site-header_logo">
+        <div class="site-header_logo">
+          <div class="site-header_logo1">
               <a href="/" class="svg-logo site-header__logo">
                 <img class="svg-logo__image" src="http://www.skysports.com/assets/Sky-Sports-Logo-transparent.svg" alt="Sky Sports" onerror="this.onerror=null;this.src='/assets/Sky-Sports-Logo-transparent.png'">
               </a>
           </div>
+          <div class="site-header_logo2">
+              <a href="/" class="svg-logo site-header__logo">
+              <img id="site-body_build_image" class="site-body_build_image" src='http://jenkins.ssdm.bskyb.com/buildStatus/icon?job=skysports' style="height:30px;">
+              </a>
+          </div>
+            </div>
           <div class="site-header_title">
-            <h1>Enviroment Breakdown Sky sports</h1>
+            <h1>Enviroment Breakdown</h1>
           </div>
       </div>
     </div>
   
     <div class="site-body">
-      <div class="site-body_build">
-        <a href='http://jenkins.ssdm.bskyb.com/job/skysports/'>Build Health :<img id="site-body_build_image" class="site-body_build_image" src='http://jenkins.ssdm.bskyb.com/buildStatus/icon?job=skysports' style="height:30px;"></a>
-      </div>
       <iframe src="http://rundownd.ssdm.bskyb.com/" name="myFrame"></iframe>
     </div>
     
@@ -43,8 +47,4 @@ setInterval(function() {
     myImageElement.src = 'http://jenkins.ssdm.bskyb.com/buildStatus/icon?job=skysports'
 }, 10001);
 
-$('iframe').load( function() {
-    $('iframe').contents().find("tbody")
-      console.log('hey');
-});
 </script>
